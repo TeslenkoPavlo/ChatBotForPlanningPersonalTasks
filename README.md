@@ -1,5 +1,3 @@
-Here are the key points in Markdown format.
-
 ---
 
 ### 1. NestJS Native Telegram Bot (Main Bot)
