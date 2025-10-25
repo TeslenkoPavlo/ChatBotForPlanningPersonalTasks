@@ -40,6 +40,9 @@
 
 * Both projects were deployed on the [Railway](https://railway.app/) platform.
 * **NestJS Bot (TaskBot):** Deployed as a `server` service (NestJS) connected to a `Postgres` database.
+
 ![](https://github.com/TeslenkoPavlo/ChatBotForPlanningPersonalTasks/blob/main/assets/Screenshot_1.png)
+
 * **Web App Bot (TaskWebAppBot):** Deployed as two services: `client` (React) and `server` (Express), connected to a `MongoDB` database.
+
 ![](https://github.com/TeslenkoPavlo/ChatBotForPlanningPersonalTasks/blob/main/assets/Screenshot_1.png)
