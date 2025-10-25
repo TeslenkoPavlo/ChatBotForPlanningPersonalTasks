@@ -45,4 +45,4 @@
 
 * **Web App Bot (TaskWebAppBot):** Deployed as two services: `client` (React) and `server` (Express), connected to a `MongoDB` database.
 
-![](https://github.com/TeslenkoPavlo/ChatBotForPlanningPersonalTasks/blob/main/assets/Screenshot_1.png)
+![](https://github.com/TeslenkoPavlo/ChatBotForPlanningPersonalTasks/blob/main/assets/Screenshot_2.png)
