@@ -1,0 +1,522 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #ff8c42 0%, #ff6b35 100%);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.aurora-shell {
+  min-height: 100vh;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.codex-pane {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(255, 107, 53, 0.3);
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.gazette-title {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+}
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(135deg, #ff8c42 0%, #ff6b35 100%);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .aurora-shell {
+    min-height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .codex-pane {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(255, 107, 53, 0.3);
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .gazette-title {
+    text-align: center;
+    color: #d84315;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+
+  .scribe-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .scribe-field {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 15px;
+    border: 2px solid #ffccbc;
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+
+  .scribe-field:focus {
+    border-color: #ff7043;
+  }
+
+  .scribe-incept {
+    width: 100%;
+    padding: 14px 20px;
+    background: linear-gradient(135deg, #ff7043 0%, #ff5722 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .scribe-incept:active {
+    transform: scale(0.98);
+    background: linear-gradient(135deg, #ff5722 0%, #f4511e 100%);
+  }
+
+  .tally-bar {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #fff3e0;
+    border-radius: 10px;
+    gap: 10px;
+  }
+
+  .tally-node {
+    text-align: center;
+    flex: 1;
+  }
+
+  .tally-caption {
+    display: block;
+    font-size: 13px;
+    color: #bf360c;
+    margin-bottom: 4px;
+  }
+
+  .tally-figure {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    color: #ff6f00;
+  }
+
+  .completion-rate {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #fff3e0;
+    border-radius: 10px;
+  }
+
+  .completion-label {
+    font-size: 13px;
+    color: #bf360c;
+    text-align: center;
+    margin-bottom: 8px;
+    font-weight: 600;
+  }
+
+  .completion-bar {
+    width: 100%;
+    height: 24px;
+    background: #ffccbc;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 8px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .completion-fill {
+    height: 100%;
+    background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+    transition: width 0.3s ease;
+    border-radius: 12px;
+  }
+
+  .completion-percentage {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ff6f00;
+  }
+
+  .sieve-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 15px;
+  }
+
+  .sieve-toggle {
+    padding: 12px 10px;
+    background: #ffe0b2;
+    color: #d84315;
+    border: 2px solid #ffcc80;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .sieve-toggle.active {
+    background: linear-gradient(135deg, #ff7043 0%, #ff5722 100%);
+    color: white;
+    border-color: #ff5722;
+  }
+
+  .arsenal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .arsenal-press {
+    padding: 12px 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: white;
+  }
+
+  .arsenal-press.coronate {
+    background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+  }
+
+  .arsenal-press.coronate:active {
+    background: linear-gradient(135deg, #f57c00 0%, #ef6c00 100%);
+  }
+
+  .arsenal-press.palliate {
+    background: linear-gradient(135deg, #ffb74d 0%, #ffa726 100%);
+  }
+
+  .arsenal-press.palliate:active {
+    background: linear-gradient(135deg, #ffa726 0%, #ff9800 100%);
+  }
+
+  .arsenal-press.oracle {
+    background: linear-gradient(135deg, #ff7043 0%, #ff5722 100%);
+  }
+
+  .arsenal-press.oracle:active {
+    background: linear-gradient(135deg, #ff5722 0%, #f4511e 100%);
+  }
+
+  .arsenal-press.purge {
+    background: linear-gradient(135deg, #e64a19 0%, #d84315 100%);
+  }
+
+  .arsenal-press.purge:active {
+    background: linear-gradient(135deg, #d84315 0%, #bf360c 100%);
+  }
+
+  .taskarium-list {
+    flex: 1;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    min-height: 200px;
+  }
+
+  .taskarium-list::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .taskarium-list::-webkit-scrollbar-track {
+    background: #fff3e0;
+    border-radius: 10px;
+  }
+
+  .taskarium-list::-webkit-scrollbar-thumb {
+    background: #ff7043;
+    border-radius: 10px;
+  }
+
+  .taskarium-list::-webkit-scrollbar-thumb:hover {
+    background: #ff5722;
+  }
+
+  .void-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: #ff8a65;
+    font-size: 16px;
+  }
+
+  .task-node {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 8px;
+    background: #fff;
+    border: 2px solid #ffccbc;
+    border-radius: 10px;
+    transition: all 0.3s;
+  }
+
+  .task-node:active {
+    border-color: #ff7043;
+  }
+
+  .task-node.completed {
+    background: #fff3e0;
+    opacity: 0.7;
+  }
+
+  .task-core {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .task-toggle {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #ff6f00;
+    flex-shrink: 0;
+  }
+
+  .task-lemma {
+    font-size: 15px;
+    color: #333;
+    word-break: break-word;
+    flex: 1;
+  }
+
+  .task-node.completed .task-lemma {
+    text-decoration: line-through;
+    color: #ff8a65;
+  }
+
+  .palimpsest-field {
+    flex: 1;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 2px solid #ff7043;
+    border-radius: 6px;
+    outline: none;
+  }
+
+  .task-rituals {
+    display: flex;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+
+  .glyph-edit,
+  .glyph-delete,
+  .glyph-save,
+  .glyph-abort {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s;
+    background: transparent;
+  }
+
+  .glyph-edit:active {
+    background: #ffe0b2;
+  }
+
+  .glyph-delete:active {
+    background: #ffccbc;
+  }
+
+  .glyph-save {
+    background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+    color: white;
+  }
+
+  .glyph-save:active {
+    background: linear-gradient(135deg, #f57c00 0%, #ef6c00 100%);
+  }
+
+  .glyph-abort {
+    background: linear-gradient(135deg, #e64a19 0%, #d84315 100%);
+    color: white;
+  }
+
+  .glyph-abort:active {
+    background: linear-gradient(135deg, #d84315 0%, #bf360c 100%);
+  }
+
+  .veil-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(216, 67, 21, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+  }
+
+  .sigil-modal {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 10px 40px rgba(255, 87, 34, 0.4);
+    animation: modalSlideIn 0.2s ease-out;
+    border: 2px solid #ffccbc;
+  }
+
+  @keyframes modalSlideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .sigil-utterance {
+    font-size: 16px;
+    color: #d84315;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .sigil-controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .sigil-btn {
+    flex: 1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: white;
+  }
+
+  .sigil-btn-affirm {
+    background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+  }
+
+  .sigil-btn-affirm:active {
+    background: linear-gradient(135deg, #f57c00 0%, #ef6c00 100%);
+  }
+
+  .sigil-btn-null {
+    background: linear-gradient(135deg, #e64a19 0%, #d84315 100%);
+  }
+
+  .sigil-btn-null:active {
+    background: linear-gradient(135deg, #d84315 0%, #bf360c 100%);
+  }
+
+  .sigil-btn-ok {
+    background: linear-gradient(135deg, #ff7043 0%, #ff5722 100%);
+  }
+
+  .sigil-btn-ok:active {
+    background: linear-gradient(135deg, #ff5722 0%, #f4511e 100%);
+  }
+
+  @media (max-width: 360px) {
+    .codex-pane {
+      padding: 15px;
+    }
+
+    .gazette-title {
+      font-size: 1.5rem;
+    }
+
+    .tally-figure {
+      font-size: 20px;
+    }
+
+    .sieve-row {
+      grid-template-columns: 1fr;
+    }
+
+    .arsenal-press {
+      font-size: 12px;
+      padding: 10px 8px;
+    }
+
+    .scribe-incept {
+      width: 100%;
+      padding: 14px 20px;
+      background: linear-gradient(135deg, #ff7043 0%, #ff5722 100%);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .scribe-incept:active {
+      transform: scale(0.98);
+      background: linear-gradient(135deg, #ff5722 0%, #f4511e 100%);
+    }
+  }
